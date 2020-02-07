@@ -31,7 +31,6 @@
         "react/jsx-props-no-spreading": "off",
         "react/prop-types": "off",
         "global-require": "off",
-        "no-nested-ternary": "off",
         "linebreak-style": [0, "error", "windows"]
     }
 }
