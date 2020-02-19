@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactGA from 'react-ga';
 import { createBrowserHistory } from 'history';
-import App from './components/app';
+import App from './pages/app';
 
 const history = createBrowserHistory();
 

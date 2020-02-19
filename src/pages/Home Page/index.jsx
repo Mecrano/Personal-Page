@@ -1,8 +1,15 @@
 import React from 'react';
+
+// Material UI
 import { Paper } from '@material-ui/core';
+
+
+// Custom Component
+import Header from '../../components/Header';
 
 const HomePage = () => (
     <>
+        <Header />
         <section>
             <div>
                 <Paper>

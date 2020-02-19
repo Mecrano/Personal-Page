@@ -10,6 +10,7 @@ import CssBaseLine from '@material-ui/core/CssBaseline';
 
 // Components
 import HomePage from '../Home Page';
+import Construction from '../Construction';
 
 const themeJSON = {
     palette: {
@@ -95,7 +96,7 @@ const App = (props) => {
             <CssBaseLine />
             <Router history={history}>
                 <Switch>
-                    <Route exact path="/" component={(newProps) => <HomePage {...newProps} />} />
+                    <Route exact path="/" component={(newProps) => <Construction {...newProps} />} />
                     <Route exact path="/home" component={(newProps) => <HomePage {...newProps} />} />
                 </Switch>
             </Router>
