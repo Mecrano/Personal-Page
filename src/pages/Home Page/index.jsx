@@ -1,32 +1,23 @@
 import React from 'react';
 
 // Material UI
-import { Paper } from '@material-ui/core';
-
 
 // Custom Component
 import Header from '../../components/Header';
+import Parallax from '../../components/Parallax';
 
 const HomePage = () => (
     <>
         <Header />
-        <section>
-            <div>
-                <Paper>
-                        Edwin Obando - Pagina en mantenimiento
-                </Paper>
-            </div>
-        </section>
-        <div className="copyright">
-            <span>
-                    Copyright © 2020
-                <a href="https://edwinobando.com/">
-                    <b>
-                        {' Edwin Obando'}
-                    </b>
-                </a>
-            </span>
-        </div>
+        <Parallax
+            title="Yo soy "
+            words={['Edwin Obando!.', 'Desarrollador!.', 'Programador!.']}
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur ex elementum lectus vehicula vestibulum. Donec commodo aliquet justo venenatis fermentum. In hac habitasse platea dictumst. Nulla non urna ut arcu auctor ultricies. Pellentesque finibus efficitur egestas. Donec tincidunt mi lorem, vitae placerat erat sagittis sit amet. Nunc leo lectus, fringilla non ipsum commodo, fringilla aliquam ipsum"
+            socialNetworks={[
+                { id: 'socialNetwork_1', route: 'www.google.com', icon: 'google' },
+                { id: 'socialNetwork_2', route: 'www.facebook.com', icon: 'FB' },
+                { id: 'socialNetwork_3', route: 'www.instagram.com', icon: 'ig' }]}
+        />
     </>
 );
 

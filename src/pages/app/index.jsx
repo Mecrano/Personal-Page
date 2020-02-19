@@ -41,7 +41,7 @@ const themeJSON = {
             contrastText: '#fff',
         },
         text: {
-            primary: 'rgb(85, 85, 85)',
+            primary: 'rgb(255, 255, 255)',
             secondary: 'rgba(85, 85, 85, 0.8)',
             disabled: 'rgba(0, 0, 0, 0.38)',
             hint: 'rgba(0, 0, 0, 0.38)',
@@ -86,6 +86,11 @@ EOTheme.typography.h4 = {
 
 EOTheme.typography.h5 = {
     fontSize: '1rem',
+    fontWeight: 'bold',
+};
+
+EOTheme.typography.h6 = {
+    fontSize: '0.85rem',
     fontWeight: 'bold',
 };
 
