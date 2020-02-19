@@ -6,7 +6,7 @@ const HomePage = () => (
         <section>
             <div>
                 <Paper>
-                        Edwin Obando test
+                        Edwin Obando - Pagina en mantenimiento
                 </Paper>
             </div>
         </section>

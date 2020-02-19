@@ -1,7 +1,10 @@
 import React from 'react';
 import './style.less';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// Navigation
+import { Router, Switch, Route } from 'react-router-dom';
+
+// Material Desing
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import CssBaseLine from '@material-ui/core/CssBaseline';
 
@@ -85,15 +88,19 @@ EOTheme.typography.h5 = {
     fontWeight: 'bold',
 };
 
-const App = () => (
-    <MuiThemeProvider theme={EOTheme}>
-        <CssBaseLine />
-        <Router>
-            <Switch>
-                <Route exact path="/" component={(props) => <HomePage {...props} />} />
-            </Switch>
-        </Router>
-    </MuiThemeProvider>
-);
+const App = (props) => {
+    const { history } = props;
+    return (
+        <MuiThemeProvider theme={EOTheme}>
+            <CssBaseLine />
+            <Router history={history}>
+                <Switch>
+                    <Route exact path="/" component={(newProps) => <HomePage {...newProps} />} />
+                    <Route exact path="/home" component={(newProps) => <HomePage {...newProps} />} />
+                </Switch>
+            </Router>
+        </MuiThemeProvider>
+    );
+};
 
 export default App;
