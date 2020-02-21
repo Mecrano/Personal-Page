@@ -6,18 +6,18 @@ import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 
 // Custom Component
-import TitleWriting from '../TitleWriting';
+import TypeWriter from '../TypeWriter';
 
 const Parallax = (props) => {
     const {
-        title, words, description, socialNetworks,
+        titles, description, socialNetworks,
     } = props;
 
     return (
         <section className="mainParallax">
             <div>
-                <TitleWriting title={title} words={words} />
-                <Typography variant="h5">
+                <TypeWriter titles={titles} />
+                <Typography variant="body1" className="descriptionText">
                     {description}
                 </Typography>
                 {socialNetworks && socialNetworks.map((item) => (
