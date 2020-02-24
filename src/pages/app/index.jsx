@@ -94,19 +94,16 @@ EOTheme.typography.h6 = {
     fontWeight: 'bold',
 };
 
-const App = (props) => {
-    const { history } = props;
-    return (
-        <MuiThemeProvider theme={EOTheme}>
-            <CssBaseLine />
-            <Router history={history}>
-                <Switch>
-                    <Route exact path="/" component={(newProps) => <Construction {...newProps} />} />
-                    <Route exact path="/home" component={(newProps) => <HomePage {...newProps} />} />
-                </Switch>
-            </Router>
-        </MuiThemeProvider>
-    );
-};
+const App = () => (
+    <MuiThemeProvider theme={EOTheme}>
+        <CssBaseLine />
+        <Router>
+            <Switch>
+                <Route exact path="/" component={(props) => <Construction {...props} />} />
+                <Route exact path="/home" component={(props) => <HomePage {...props} />} />
+            </Switch>
+        </Router>
+    </MuiThemeProvider>
+);
 
 export default App;
