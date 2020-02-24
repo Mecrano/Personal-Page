@@ -52,6 +52,6 @@
     "react": "^16.10.2",
     "react-device-detect": "^1.11.14",
     "react-dom": "^16.10.2",
-    "react-router-dom": "^5.1.2"
+    "react-scroll": "^1.7.16"
   }
 }

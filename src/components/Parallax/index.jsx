@@ -10,11 +10,11 @@ import TypeWriter from '../TypeWriter';
 
 const Parallax = (props) => {
     const {
-        titles, description, socialNetworks,
+        titles, description, socialNetworks, id,
     } = props;
 
     return (
-        <section className="mainParallax">
+        <section className="mainParallax" id={id}>
             <div>
                 <TypeWriter titles={titles} />
                 <Typography variant="body1" className="descriptionText">

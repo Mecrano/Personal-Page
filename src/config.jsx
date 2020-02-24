@@ -2,25 +2,25 @@
 const MenuData = [
     {
         id: 'menu_0',
-        route: '/home',
+        route: 'home',
         icon: '',
         name: 'Inicio',
     },
     {
         id: 'menu_1',
-        route: '/about',
+        route: 'about',
         icon: '',
         name: 'Acerca de mi',
     },
     {
         id: 'menu_2',
-        route: '/projects',
+        route: 'projects',
         icon: '',
         name: 'Proyectos',
     },
     {
         id: 'menu_3',
-        route: '/contact',
+        route: 'contact',
         icon: '',
         name: 'Contacto',
     },

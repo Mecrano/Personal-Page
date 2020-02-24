@@ -1,16 +1,12 @@
 import React from 'react';
 import './style.less';
 
-// Navigation
-import { Router, Switch, Route } from 'react-router-dom';
-
 // Material Desing
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import CssBaseLine from '@material-ui/core/CssBaseline';
 
 // Components
 import HomePage from '../Home Page';
-import Construction from '../Construction';
 
 const themeJSON = {
     palette: {
@@ -97,12 +93,7 @@ EOTheme.typography.h6 = {
 const App = () => (
     <MuiThemeProvider theme={EOTheme}>
         <CssBaseLine />
-        <Router>
-            <Switch>
-                <Route exact path="/" component={(props) => <Construction {...props} />} />
-                <Route exact path="/home" component={(props) => <HomePage {...props} />} />
-            </Switch>
-        </Router>
+        <HomePage />
     </MuiThemeProvider>
 );
 
