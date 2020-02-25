@@ -19,15 +19,15 @@ const themeJSON = {
             default: '#fafafa',
         },
         primary: {
-            light: 'rgba(106, 242, 255, 1)',
-            main: 'rgba(0, 191, 255, 1)',
-            dark: 'rgba(0, 143, 204, 1)',
+            light: '#2B2B2B',
+            main: '#313131',
+            dark: '#000',
             contrastText: '#fff',
         },
         secondary: {
-            light: 'rgba(176, 133, 245, 1)',
-            main: 'rgba(126, 87, 194, 1)',
-            dark: 'rgba(77, 44, 145, 1)',
+            light: '#f37f33',
+            main: '#f06000',
+            dark: '#a84300',
             contrastText: '#fff',
         },
         error: {

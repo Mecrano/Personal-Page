@@ -6,11 +6,10 @@ import Link from '@material-ui/core/Link';
 
 const SocialNetworks = (props) => {
     const { data, className } = props;
-    console.log(props);
     return (
         <div className={className}>
             {data && data.map((item) => (
-                <Link href={item.route} key={item.id}>
+                <Link href={item.route} target="_blank" rel="noreferrer" key={item.id}>
                     {item.icon}
                 </Link>
             ))}
