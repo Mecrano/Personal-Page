@@ -6,16 +6,27 @@ import Typography from '@material-ui/core/Typography';
 
 // Custom Component
 import Header from '../../components/Header';
-import Parallax from '../../components/Parallax';
+import VideoBG from '../../components/VideoBG';
 import TypeWriter from '../../components/TypeWriter';
+import Parallax from '../../components/Parallax';
 import SocialNetworks from '../../components/SocialNetworks';
 
 // Config
 import { parallaxData } from '../../config';
 
+// Resources
+import videoJumbotron from '../../media/videos/videoJumbotron.mp4';
+
 const HomePage = () => (
     <>
         <Header />
+        <VideoBG id="videoJumbotron" media={videoJumbotron} mediaType="video/mp4">
+            <TypeWriter titles={parallaxData.titles} />
+            <Typography variant="body1" className="descriptionText">
+                {parallaxData.description}
+            </Typography>
+            <SocialNetworks data={parallaxData.socialNetworks} className="socialNetworks" />
+        </VideoBG>
         <Parallax id="home">
             <TypeWriter titles={parallaxData.titles} />
             <Typography variant="body1" className="descriptionText">
